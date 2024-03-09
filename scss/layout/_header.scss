@@ -1,0 +1,71 @@
+.header {
+  &--main {
+    background-color: $colorLight;
+  }
+  &-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    min-block-size: 92px;
+  }
+
+  .logo img {
+    max-inline-size: 100%;
+    min-block-size: auto;
+    object-fit: cover;
+  }
+
+  .nav {
+    &-bar {
+      margin-inline-start: -100px;
+    }
+    &-list {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 40px;
+    }
+
+    &-list li a {
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 1.6;
+      color: $textColorHeader;
+    }
+  }
+
+  &-contacts {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 36px;
+
+    &-link {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    &-caption {
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 1.5;
+      color: $textColorHeader;
+    }
+
+    &-value {
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 1.5;
+      color: $textColorValue;
+    }
+
+    .contacts-link {
+      padding-inline-start: 53px;
+      background-position: left center;
+      background-repeat: no-repeat;
+      background-size: 40px 40px;
+    }
+  }
+}
