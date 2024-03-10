@@ -30,3 +30,7 @@
   background-size: cover;
   background-repeat: no-repeat;
 }
+
+@function getSize($height: 1) {
+  @return #{$height * 2}px;
+}

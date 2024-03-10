@@ -67,7 +67,8 @@ select {
 button {
   padding: 0;
   border: none;
-  color: transparent;
+  background-color: transparent;
+  cursor: pointer;
 }
 
 /* Приводим к единому цвету svg-элементы */
