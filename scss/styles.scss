@@ -5,5 +5,10 @@
 @import './base/fonts';
 @import './base/mixin';
 
+//Components
+@import './components/text';
+@import './components/buttons';
+
 //Layout
 @import './layout/header';
+@import './layout/hero';

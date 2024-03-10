@@ -9,13 +9,11 @@
     justify-content: space-between;
     min-block-size: 90px;
   }
-
   .logo img {
     max-inline-size: 100%;
     min-block-size: auto;
     object-fit: cover;
   }
-
   .nav {
     &-bar {
       margin-inline-start: -100px;
@@ -26,7 +24,6 @@
       align-items: center;
       gap: 40px;
     }
-
     &-list li a {
       @include fluid-text(16, 12);
       font-weight: 700;
@@ -34,33 +31,28 @@
       color: $textColorHeader;
     }
   }
-
   &-contacts {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     gap: 36px;
-
     &-link {
       display: flex;
       flex-direction: column;
       align-items: flex-start;
     }
-
     &-caption {
       @include fluid-text(14, 12);
       font-weight: 700;
       line-height: 1.5;
       color: $textColorHeader;
     }
-
     &-value {
       @include fluid-text(18, 14);
       font-weight: 400;
       line-height: 1.5;
       color: $textColorValue;
     }
-
     .contacts-link {
       padding-inline-start: 53px;
       background-position: left center;
