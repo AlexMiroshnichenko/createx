@@ -2,7 +2,14 @@
   background-color: $colorBgHero;
   background-image: linear-gradient($colorBgHero), url('../images/bg-hero.jpg');
   @include bg-cover;
-  padding-block: 220px 120px;
+  min-block-size: 100dvh;
+  &-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    min-block-size: 100dvh;
+  }
 
   &-content {
     max-inline-size: 580px;
