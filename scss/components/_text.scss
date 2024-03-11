@@ -12,3 +12,28 @@
   line-height: 1.5;
   color: $colorMainText;
 }
+
+.title {
+  @include fluid-text(46, 24);
+  font-weight: 700;
+  line-height: 1.3;
+  color: $titleColor;
+  &--center {
+    text-align: center;
+  }
+  &--offset {
+    margin-block-end: 24px;
+  }
+}
+.descr {
+  @include fluid-text(18, 12);
+  font-weight: 400;
+  line-height: 1.5;
+  color: $colorMainText;
+  &--center {
+    text-align: center;
+  }
+  &--offset {
+    margin-block-end: 60px;
+  }
+}

@@ -1,13 +1,10 @@
 .btn {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  @include flex-center(false);
   block-size: 52px;
   padding-inline: 40px 40px;
   border: 1px solid transparent;
   border-radius: 4px;
-  @include fluid-text(16, 12);
+  @include fluid-text(16, 10);
   font-weight: 700;
   line-height: 3.25;
   letter-spacing: 0.5px;

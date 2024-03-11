@@ -31,6 +31,6 @@
   background-repeat: no-repeat;
 }
 
-@function getSize($height: 1) {
-  @return #{$height * 2}px;
+@function getSize($size: 1) {
+  @return #{$size * 2}px;
 }
