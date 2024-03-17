@@ -1,5 +1,5 @@
 .btn {
-  @include flex-center(false);
+  @include flex-center(true);
   block-size: 52px;
   padding-inline: 40px 40px;
   border: 1px solid transparent;
@@ -10,4 +10,14 @@
   letter-spacing: 0.5px;
   text-transform: uppercase;
   color: $colorLight;
+}
+
+.btn-transparent--white {
+  background-color: transparent;
+  border: 1px solid $colorLight;
+}
+
+.btn-basic--primary {
+  background-color: $colorPrimary;
+  border: 1px solid $colorPrimary;
 }

@@ -1,0 +1,76 @@
+.form-group {
+  padding: 48px 60px 48px;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px -4px rgba(30, 33, 44, 0.03),
+    0 12px 10px -6px rgba(154, 156, 165, 0.04),
+    0 30px 24px -10px rgba(154, 156, 165, 0.05),
+    0 80px 80px -20px rgba(154, 156, 165, 0.08);
+  background-color: $colorLight;
+
+  &--offset {
+    transform: translateY(120px);
+  }
+
+  &-title {
+    margin-block-end: 32px;
+    @include fluid-text(28, 16);
+    font-weight: 700;
+    line-height: 1.5;
+    text-align: center;
+    color: $titleColor;
+  }
+
+  &-field {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    gap: 24px;
+  }
+
+  &-field label {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 8px;
+  }
+
+  &-field label span {
+    @include fluid-text(16, 14);
+    font-weight: 400;
+    line-height: 1.6;
+    color: $titleColor;
+  }
+
+  &-field input {
+    appearance: none;
+    outline: none;
+    width: 264px;
+    height: 44px;
+    border: 1px solid $colorBorderInput;
+    border-radius: 4px;
+    background-color: $colorBgInput;
+  }
+
+  &-field label[for='message'] {
+    flex-grow: 1;
+  }
+
+  &-field input[name='message'] {
+    width: 100%;
+  }
+
+  &-field input[placeholder] {
+    padding: 12px 16px;
+    @include fluid-text(14, 12);
+    font-weight: 400;
+    line-height: 1.5;
+    color: $colorPlaceholder;
+  }
+
+  .btn-form {
+    width: 104px;
+    height: 44px;
+    padding-inline: 0;
+    @include fluid-text(14, 12);
+  }
+}

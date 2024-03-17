@@ -38,13 +38,4 @@
     align-items: center;
     gap: 24px;
   }
-
-  .btn-transparent--white {
-    background-color: transparent;
-    border: 1px solid $colorLight;
-  }
-  .btn-basic--primary {
-    background-color: $colorPrimary;
-    border: 1px solid $colorPrimary;
-  }
 }
