@@ -60,11 +60,6 @@ video {
   vertical-align: middle;
 }
 
-/* Указываем понятную периодичность в потоке данных у article*/
-article > * + * {
-  margin-top: 1em;
-}
-
 /* Наследуем шрифты для инпутов и кнопок */
 input,
 button,
@@ -78,19 +73,6 @@ button {
   border: none;
   background-color: transparent;
   cursor: pointer;
-}
-
-/* Приводим к единому цвету svg-элементы */
-svg *[fill] {
-  fill: currentColor;
-}
-svg *[stroke] {
-  stroke: currentColor;
-}
-
-/* Чиним баг задержки смены цвета при взаимодействии с svg-элементами */
-svg * {
-  transition-property: fill, stroke;
 }
 
 /* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */

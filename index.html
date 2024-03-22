@@ -53,8 +53,8 @@
 		<section class="hero">
 			<div class="container hero-flex">
 				<div class="hero-content">
-					<h1 class="hero-title main-title">
-						Create<span>x</span> Construction
+					<h1 class="hero-title main-title" data-text="Createx Construction">
+						Create<span data-text="x">x</span> Construction
 					</h1>
 					<p class="hero-descr main-descr">
 						Cras ultrices leo vitae non viverra. Fringilla nisi quisque consequat, dignissim vitae proin ipsum sed. Pellentesque nec turpis purus eget pellentesque integer ipsum elementum felis.
@@ -105,24 +105,39 @@
 					Our mission is to set the highest standards for construction sphere.
 				</p>
 				<div class="values-block">
-					<div class="values-item" style="background-image: url('./images/like.svg');">
-						<h3>Quality</h3>
-						<p>
-							Culpa nostrud commodo ea consequat aliquip reprehenderit. Veniam velit nostrud aliquip sunt.
-						</p>
-					</div>
-					<div class="values-item" style="background-image: url('./images/hand.svg');">
-						<h3>Safety</h3>
-						<p>
-							Anim reprehenderit sint voluptate exercitation adipisicing laborum adipisicing. Minim empor est ea.
-						</p>
-					</div>
-					<div class="values-item" style="background-image: url('./images/slippers.svg');">
-						<h3>Comfort</h3>
-						<p>
-							Sit veniam aute dolore adipisicing nulla sit culpa. Minim mollit voluptate ullamco proident ea ad.
-						</p>
-					</div>
+					<article class="values-item">
+						<svg>
+							<use xlink:href="./images/sprite.svg#like"></use>
+						</svg>
+						<div class="values-item-content">
+							<h3 data-text="">Quality</h3>
+							<p data-text="">
+								Culpa nostrud commodo ea consequat aliquip reprehenderit. Veniam velit nostrud aliquip sunt.
+							</p>
+						</div>
+					</article>
+					<article class="values-item">
+						<svg>
+							<use xlink:href="./images/sprite.svg#hand"></use>
+						</svg>
+						<div class="values-item-content">
+							<h3>Safety</h3>
+							<p>
+								Anim reprehenderit sint voluptate exercitation adipisicing laborum adipisicing. Minim empor est ea.
+							</p>
+						</div>
+					</article>
+					<article class="values-item">
+						<svg>
+							<use xlink:href="./images/sprite.svg#comfort"></use>
+						</svg>
+						<div class="values-item-content">
+							<h3>Comfort</h3>
+							<p>
+								Sit veniam aute dolore adipisicing nulla sit culpa. Minim mollit voluptate ullamco proident ea ad.
+							</p>
+						</div>
+					</article>
 				</div>
 				<form method="POST" action="#" class="form-group form-group--offset">
 					<h2 class="form-group-title">
@@ -156,6 +171,45 @@
 				<p class="descr descr--center descr--offset">
 					Createx Construction Bureau is a construction giant with a full range of construction services.
 				</p>
+				<div class="catalog">
+					<article class="catalog-card catalog-card-construction">
+						<div class="catalog-card-content">
+							<a href="#" class="catalog-card-link"></a>
+							<svg>
+								<use xlink:href="./images/sprite.svg#ic-construction"></use>
+							</svg>
+							<h3>Construction</h3>
+						</div>
+					</article>
+					<article class="catalog-card catalog-card-project">
+						<div class="catalog-card-content">
+							<a href="#" class="catalog-card-link"></a>
+							<svg>
+								<use xlink:href="./images/sprite.svg#ic-development"></use>
+							</svg>
+							<h3>Project Development</h3>
+						</div>
+					</article>
+					<article class="catalog-card catalog-card-desing">
+						<div class="catalog-card-content">
+							<a href="#" class="catalog-card-link"></a>
+							<svg>
+								<use xlink:href="./images/sprite.svg#ic-design"></use>
+							</svg>
+							<h3>Interior Design</h3>
+						</div>
+					</article>
+					<article class="catalog-card catalog-card-repairs">
+						<div class="catalog-card-content">
+							<a href="#" class="catalog-card-link"></a>
+							<svg>
+								<use xlink:href="./images/sprite.svg#ic-repairs"></use>
+							</svg>
+							<h3>Repairs</h3>
+						</div>
+					</article>
+
+				</div>
 			</div>
 		</section>
 		<!-- /.services-->

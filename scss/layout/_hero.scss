@@ -1,6 +1,7 @@
 .hero {
   background-color: $colorBgHero;
-  background-image: linear-gradient($colorBgHero), url('../images/bg-hero.jpg');
+  background-image: linear-gradient(rgba(30, 33, 44, 0.6)),
+    url('../images/bg-hero.jpg');
   @include bg-cover;
   min-block-size: 100dvh;
   &-flex {
@@ -16,6 +17,7 @@
   }
 
   &-title {
+    position: relative;
     margin-block-end: 24px;
     color: $colorLight;
   }
