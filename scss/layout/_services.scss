@@ -55,7 +55,7 @@
       }
 
       &--project::before {
-        background-image: url('../images/developmentbg.png');
+        background-image: url('../../images/Developmentbg.png');
       }
 
       &--desing::before {
@@ -107,12 +107,12 @@
         position: absolute;
         top: 0;
         left: 0;
+        z-index: 5;
         inline-size: 100%;
         block-size: 100%;
+        border-radius: inherit;
         font-size: 0;
         color: transparent;
-        z-index: 5;
-        border-radius: inherit;
       }
 
       & h3 {
