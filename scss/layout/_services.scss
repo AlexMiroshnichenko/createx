@@ -1,15 +1,21 @@
 .services {
-  padding-block: 210px 80px;
+  padding-block: 212px 80px;
   background-color: $colorBgServises;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  .catalog {
+  &-inner {
     display: flex;
-    flex-wrap: wrap;
-    align-items: center;
+    flex-direction: column;
     justify-content: center;
+  }
+  .catalog {
+    @include flex-center(false);
+    flex-wrap: wrap;
     gap: 30px;
+    &-offset {
+      margin-block-end: 80px;
+    }
 
     &-card {
       position: relative;
@@ -44,19 +50,19 @@
         opacity: 1;
       }
 
-      &-construction:hover {
+      &--construction::before {
         background-image: url('../images/constructionbg.jpg');
       }
 
-      &-project:hover {
-        background-image: url('../images/Developmentbg.png');
+      &--project::before {
+        background-image: url('../images/developmentbg.png');
       }
 
-      &-desing:hover {
+      &--desing::before {
         background-image: url('../images/designbg.jpeg');
       }
 
-      &-repairs:hover {
+      &--repairs::before {
         background-image: url('../images/repairs.jpg');
       }
 
@@ -121,6 +127,17 @@
       &:hover h3 {
         color: $colorLight;
       }
+    }
+  }
+  &-lern {
+    @include flex-center(false);
+    flex-wrap: wrap;
+    column-gap: 40px;
+    & h3 {
+      @include fluid-text(28, 20);
+      font-weight: 700;
+      line-height: 1.5;
+      color: $titleColor;
     }
   }
 }
