@@ -1,0 +1,30 @@
+.slider-nav {
+  @include flex-center(false);
+  &-btn {
+    @include flex-center(false);
+    inline-size: 48px;
+    block-size: 48px;
+    border-radius: 100%;
+    color: $textColorHeader;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    & svg {
+      display: block;
+      inline-size: 24px;
+      block-size: 24px;
+      object-fit: cover;
+      color: inherit;
+      fill: currentColor;
+    }
+    &:hover {
+      color: $colorLight;
+      background-color: $colorPrimary;
+    }
+  }
+}
+
+.slider-control-prev {
+}
+.slider-btn {
+}
+.slider-control-next {
+}

@@ -1,0 +1,19 @@
+.portfolio {
+  padding-block: getSize(60);
+  background-color: $colorLight;
+  &-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    &-offset {
+      margin-block-end: 50px;
+    }
+  }
+
+  &-title {
+    @include fluid-text(46, 24);
+    &-width {
+      inline-size: 59%;
+    }
+  }
+}
