@@ -20,4 +20,12 @@
 .btn-basic--primary {
   background-color: $colorPrimary;
   border: 1px solid $colorPrimary;
+  box-shadow: inset 0 0 0 5rem $colorPrimary;
+  transition: all 0.4s ease-in-out;
+  &:hover {
+    border-color: $colorPrimary;
+    box-shadow: inset 0 0 0 0 $colorPrimary;
+    background-color: transparent;
+    color: $colorPrimary;
+  }
 }
