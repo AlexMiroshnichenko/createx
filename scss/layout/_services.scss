@@ -51,11 +51,11 @@
       }
 
       &--construction::before {
-        background-image: url('../images/constructionbg.jpg');
+        background-image: url('../images/сonstruction.jpg');
       }
 
       &--project::before {
-        background-image: url('../images/Developmentbg.png');
+        background-image: url('../images/development.jpg');
       }
 
       &--desing::before {
@@ -63,7 +63,7 @@
       }
 
       &--repairs::before {
-        background-image: url('../images/repairs.jpg');
+        background-image: url('../../images/repairs.jpg');
       }
 
       &::after {
@@ -127,17 +127,6 @@
       &:hover h3 {
         color: $colorLight;
       }
-    }
-  }
-  &-lern {
-    @include flex-center(false);
-    flex-wrap: wrap;
-    column-gap: 40px;
-    & h3 {
-      @include fluid-text(28, 20);
-      font-weight: 700;
-      line-height: 1.5;
-      color: $titleColor;
     }
   }
 }

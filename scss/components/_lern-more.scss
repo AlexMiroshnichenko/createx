@@ -1,0 +1,11 @@
+.lern-more {
+  @include flex-center(false);
+  flex-wrap: wrap;
+  column-gap: 40px;
+  & h3 {
+    @include fluid-text(28, 20);
+    font-weight: 700;
+    line-height: 1.5;
+    color: $titleColor;
+  }
+}

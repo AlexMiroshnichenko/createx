@@ -1,4 +1,6 @@
 .slider-nav {
+  position: relative;
+  z-index: 20;
   @include flex-center(false);
   &-btn {
     @include flex-center(false);
@@ -20,11 +22,4 @@
       background-color: $colorPrimary;
     }
   }
-}
-
-.slider-control-prev {
-}
-.slider-btn {
-}
-.slider-control-next {
 }
