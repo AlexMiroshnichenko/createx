@@ -7,10 +7,10 @@ const portfolioSlider = new Swiper('.portfolio-slider', {
   spaceBetween: 30,
   speed: 500,
   loop: true,
-  autoplay: {
+/*   autoplay: {
     delay: 5000,
   },
-
+ */
   // Навигационные стрелки
   navigation: {
     nextEl: '.slider-control-next',

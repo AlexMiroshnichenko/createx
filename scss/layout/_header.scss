@@ -1,13 +1,18 @@
 .header {
+  padding-block: 20px;
   &--main {
     background-color: $colorLight;
   }
-  &-row {
+  .container-flex {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-between;
-    min-block-size: 90px;
+  }
+  &-inner {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 60px;
   }
   .logo img {
     max-inline-size: 100%;
@@ -15,9 +20,6 @@
     object-fit: cover;
   }
   .nav {
-    &-bar {
-      margin-inline-start: -100px;
-    }
     &-list {
       display: flex;
       flex-wrap: wrap;
@@ -33,9 +35,9 @@
   }
   &-contacts {
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
     gap: 36px;
+    margin-inline-start: auto;
     &-link {
       display: flex;
       flex-direction: column;
